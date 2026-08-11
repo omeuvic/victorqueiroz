@@ -188,10 +188,17 @@
 
     <div class="projects-grid">
       <article class="project-card">
-        <div class="project-image">
-          <img src="projetos/pbi.png" alt="Projeto Power BI" />
-          <img src="projetos/pbi 1.png" alt="Projeto Power BI" />
-          <img src="projetos/pbi 2.png" alt="Projeto Power BI" />
+        <div class="project-gallery">
+          <div class="project-gallery-view">
+            <img src="projetos/pbi.png" alt="Projeto Power BI" class="project-slide active" />
+            <img src="projetos/pbi 1.png" alt="Projeto Power BI" class="project-slide" />
+            <img src="projetos/pbi 2.png" alt="Projeto Power BI" class="project-slide" />
+          </div>
+          <div class="project-gallery-controls">
+            <button class="gallery-btn prev" type="button" aria-label="Imagem anterior"><i data-lucide="chevron-left"></i></button>
+            <span class="gallery-counter">1 / 3</span>
+            <button class="gallery-btn next" type="button" aria-label="Próxima imagem"><i data-lucide="chevron-right"></i></button>
+          </div>
         </div>
         <div class="project-info">
           <div class="project-type">POWER BI • INDICADORES</div>
@@ -202,8 +209,15 @@
       </article>
 
       <article class="project-card">
-        <div class="project-image">
-          <img src="projetos/excel 1.png" alt="Projeto Excel" />
+        <div class="project-gallery">
+          <div class="project-gallery-view">
+            <img src="projetos/excel 1.png" alt="Projeto Excel" class="project-slide active" />
+          </div>
+          <div class="project-gallery-controls">
+            <button class="gallery-btn prev" type="button" aria-label="Imagem anterior"><i data-lucide="chevron-left"></i></button>
+            <span class="gallery-counter">1 / 1</span>
+            <button class="gallery-btn next" type="button" aria-label="Próxima imagem"><i data-lucide="chevron-right"></i></button>
+          </div>
         </div>
         <div class="project-info">
           <div class="project-type">EXCEL • PLANILHAS</div>
@@ -214,9 +228,16 @@
       </article>
 
       <article class="project-card">
-        <div class="project-image">
-          <img src="projetos/ferramentas criadas.png" alt="Automação" />
-          <img src="projetos/ferramentas criadas 1.png" alt="Automação" />
+        <div class="project-gallery">
+          <div class="project-gallery-view">
+            <img src="projetos/ferramentas criadas.png" alt="Automação" class="project-slide active" />
+            <img src="projetos/ferramentas criadas 1.png" alt="Automação" class="project-slide" />
+          </div>
+          <div class="project-gallery-controls">
+            <button class="gallery-btn prev" type="button" aria-label="Imagem anterior"><i data-lucide="chevron-left"></i></button>
+            <span class="gallery-counter">1 / 2</span>
+            <button class="gallery-btn next" type="button" aria-label="Próxima imagem"><i data-lucide="chevron-right"></i></button>
+          </div>
         </div>
         <div class="project-info">
           <div class="project-type">AUTOMAÇÃO • FERRAMENTAS</div>
@@ -312,10 +333,10 @@
 </main>
 
 <footer class="site-footer">
-  <p><span id="year"></span> Victor Hugo Rocha de Queiroz. Portfólio profissional.</p>
+  <div class="container">
+    <p><span id="year"></span> • Victor Hugo Rocha de Queiroz. Portfólio profissional.</p>
+  </div>
 </footer>
-
-<button class="back-top" id="back-top" aria-label="Voltar ao topo"><i data-lucide="arrow-up"></i></button>
 
 <script src="script.js"></script>
 </body>
